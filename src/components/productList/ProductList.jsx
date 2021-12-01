@@ -1,6 +1,9 @@
 import "./productList.css";
 import Product from "../product/Product";
-import Vishnu_pro_pic from '../../img/Vishnu_pro_pic.jpg'
+import shine from '../../img/shine.png'
+import tripadvisor from '../../img/tripadvisor.png'
+import zoomcar from '../../img/zoomcar.png'
+
 
 const ProductList = () => {
   return (
@@ -15,17 +18,20 @@ const ProductList = () => {
       </div>
       {/* <div> <h1>Project</h1></div> */}
       <div className="pl-list">
-        <Product img={Vishnu_pro_pic} title="Clone of Zoom car website" 
+        <Product img={zoomcar} title="Clone of Zoom car website" 
          link="https://github.com/vishnusankar95/zoomCarProj" 
-        description="A web application to rent four-wheelers on a monthly and daily basis." />
+        description="A web application to rent four-wheelers on a monthly and daily basis."
+        tstack="HTML | CSS | Javascript" />
 
-        <Product img={Vishnu_pro_pic} title="Clone of Shine website"  
-        link="https://github.com/vishnusankar95/zoomCarProj" 
-        description="A web application to find and post a job on area basis." />
+        <Product img={shine} title="Clone of Shine website"  
+        link="https://github.com/Somesh-Kumar-Yadav/Shine-Clone" 
+        description="A web application to find and post a job on area basis."
+        tstack="HTML | CSS | Javascript | React" />
 
-        <Product img={Vishnu_pro_pic} title="Clone of Tripadvisor website" 
-        link="https://github.com/vishnusankar95/zoomCarProj" 
-        description="A web application to plan beautiful journey." />
+        <Product img={tripadvisor} title="Clone of Tripadvisor website" 
+        link="https://github.com/vishnusankar95/tripadvisor_clone" 
+        description="A web application to plan beautiful journey."
+        tstack="HTML | CSS | Javascript | React |MongoDb | ExpressJS | Node" />
       </div>
     </div>
   );
