@@ -1,6 +1,6 @@
 import "./intro.css";
 // import Me from "../../img/me.png";
-// import Vishnu_pro_pic from "../../img/Vishnu_pro_pic.jpg";
+// import bg_gif from "../../img/bg_gif.gif";
 
 const Intro = () => {
   return (
@@ -81,7 +81,7 @@ const Intro = () => {
       </div>
       <div className="i-right">
         <div className="i-bg"></div>
-        {/* <img src={Vishnu_pro_pic} alt="" className="i-img" /> */}
+        {/* <img src={bg_gif} alt="" className="i-img" /> */}
       </div>
     </div>
   );

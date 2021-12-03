@@ -39,16 +39,16 @@
 
 .i-title-wrapper {
   height: 100%;
-  animation: move 15s ease-in-out infinite alternate;
+  animation: move 25s ease-in-out infinite alternate;
 }
 
 @keyframes move {
   25% {
     transform: translateY(-50px);
   }
-  /* 50% {
+  50% {
     transform: translateY(-100px);
-  } */
+  }
   /* 75% {
     transform: translateY(-150px);
   } */
@@ -61,7 +61,7 @@
   height: 50px;
   font-size: 30px;
   font-weight: bold;
-  color: #335384;
+  color: #00E696;
   display: flex;
   align-items: center;
 }
@@ -82,11 +82,11 @@
 
 .i-bg {
   clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-  background-color: #335384;
+  background-color: #00E696;
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
+  top: 3.2vw;
   right: 0;
 }
 

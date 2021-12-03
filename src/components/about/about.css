@@ -22,6 +22,7 @@
   top: 50px;
   left: 50px;
   background-color: #333;
+  border: 1px solid #00E696;
 }
 
 .a-card {
@@ -30,7 +31,9 @@
   border-radius: 30px;
   position: relative;
   overflow: hidden;
+  border: 1px solid #00E696;
 }
+
 
 .a-img {
   width: 100%;
@@ -45,7 +48,7 @@
 }
 
 .a-title {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .a-sub {
@@ -53,7 +56,8 @@
 }
 
 .a-desc{
-    font-weight: 300;
+    font-size:large;
+    font-weight: 400;
 }
 
 .a-award{

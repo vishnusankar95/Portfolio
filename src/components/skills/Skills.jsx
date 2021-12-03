@@ -1,23 +1,31 @@
 import React from 'react'
 import './skills.css'
+import html from '../../img/html.png'
+import css from '../../img/css.png'
+import javascripts from '../../img/javascripts.png'
+import react from '../../img/react.png'
+import github from '../../img/github.png'
+import node from '../../img/node.png'
+import express from '../../img/express.png'
+import mongoose from '../../img/mongoose.png'
 
 function Skills() {
     return (
-        <div>
+        <div className="aligner">
         <h1 className="heading">Skills</h1>
         <div className="container">
           <div className="logoWrapper">
-            <i className="devicon-html5-plain colored" />
+            <img  src={html} alt="HTML"  className="logopic"/>
             <span>HTML</span>
           </div>
 
           <div className="logoWrapper">
-            <i className="devicon-css3-plain colored" />
+          <img  src={css} alt="CSS"  className="logopic"/>
             <span>CSS</span>
           </div>
 
           <div className="logoWrapper">
-            <i className="devicon-javascript-plain colored"></i>
+          <img  src={javascripts} alt="JavaScript"  className="logopic"/>
             <span>Javascript</span>
           </div>
 
@@ -27,7 +35,7 @@ function Skills() {
           </div> */}
 
           <div className="logoWrapper">
-            <i className="devicon-react-original colored" />
+          <img  src={react} alt="React"  className="logopic"/>
             <span>React</span>
           </div>
 
@@ -37,7 +45,7 @@ function Skills() {
           </div> */}
 
           <div className="logoWrapper">
-            <i class="devicon-git-plain colored"></i>
+          <img  src={github} alt="Git hub"  className="logopic"/>
             <span>Git</span>
           </div>
 
@@ -55,17 +63,17 @@ function Skills() {
           </div> */}
 
           <div className="logoWrapper">
-            <i style={{ color: "#509941" }} className="devicon-nodejs-plain" />
+          <img  src={node} alt="Node"  className="logopic"/>
             <span>Node</span>
           </div>
 
           <div className="logoWrapper">
-            <i className="devicon-express-original" />
+          <img  src={express} alt="express"  className="logopic"/>
             <span>Express</span>
           </div>
 
           <div className="logoWrapper">
-            <i className="devicon-mongodb-plain colored" />
+          <img  src={mongoose} alt="MongoDB"  className="logopic"/>
             <span>MongoDB</span>
           </div>
         </div>

@@ -1,7 +1,9 @@
 import "./product.css";
+import github from '../../img/github.png'
+import liveview from '../../img/liveview.png'
 
 
-const Product = ({img,link,title,description,tstack}) => {
+const Product = ({img,link,title,description,tstack,live}) => {
   console.log(link)
   return (
     <div className="p">
@@ -10,10 +12,7 @@ const Product = ({img,link,title,description,tstack}) => {
         <div className="p-circle"></div>
         <div className="p-circle"></div>
       </div>
-      
-      <div className="p-ti">
-      <h2 className="p-headliner">{title}</h2> 
-      </div>
+
 
       <div className="p-grider">
       <div className="p-imgfit">
@@ -22,9 +21,15 @@ const Product = ({img,link,title,description,tstack}) => {
       </div>
 
       <div className="p-doh">
-          <h4> <i>{description}</i> </h4>
-
+      <h2 className="p-headliner">{title}</h2> 
+          <h4 className="p-subheadliner"> {description} </h4>
+    
            <h4 className="p-stack">Tech Stack: {tstack}</h4>
+
+           <div>
+             <a href={link} target="_blank" rel="noreferrer">  <img src={github} alt="" className="p-git_img" /></a>
+             <a href={live} target="_blank" rel="noreferrer">  <img src={liveview} alt="" className="p-git_img" /></a>
+             </div>
       </div>
        
       </div>
