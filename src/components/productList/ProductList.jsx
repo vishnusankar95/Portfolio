@@ -1,7 +1,7 @@
 import "./productList.css";
 import Product from "../product/Product";
 import shine from '../../img/shine.png'
-import tripadvisor from '../../img/tripadvisor.png'
+import Booking_project from '../../img/Booking_project.png'
 import zoomcar from '../../img/zoomcar.png'
 
 
@@ -30,11 +30,11 @@ const ProductList = () => {
         tstack="HTML | CSS | Javascript | React"
         live="https://shine-clone.herokuapp.com/" />
 
-        <Product img={tripadvisor} title="Clone of Tripadvisor website" 
-        link="https://github.com/vishnusankar95/tripadvisor_clone" 
-        description="A web application to plan beautiful journey."
+        <Product img={Booking_project} title="Clone of Booking.Com website" 
+        link="https://github.com/Ramlala-Yadav-Git/Booking.com-clone" 
+        description="Booking.com’s mission is to make it easier for everyone to experience the world."
         tstack="HTML | CSS | Javascript | React |MongoDb | ExpressJS | Node"
-        live="https://github.com/vishnusankar95/tripadvisor_clone" />
+        live=" https://booking-com.netlify.app" />
       </div>
     </div>
   );
