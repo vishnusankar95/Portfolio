@@ -6,7 +6,8 @@
 .c-bg {
   width: 20px;
   height: 100%;
-  background-color: #335384;
+  background-color:#333;
+  border-right: 1px solid #00E696;
   position: absolute;
 }
 
@@ -25,6 +26,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 9vh;
 }
 
 .c-title {
@@ -44,6 +46,12 @@
   width: 30px;
   height: 30px;
   margin-right: 20px;
+}
+
+.c-icong {
+  width: 80px;
+  height: 40px;
+  margin-left: -1.9vw;
 }
 
 .c-desc {
@@ -74,7 +82,7 @@ textarea {
 button {
   border: none;
   padding: 15px;
-  background-color: #335384;
+  background-color: #00E696;;
   color: white;
   font-weight: 500;
   cursor: pointer;
@@ -84,6 +92,10 @@ button {
   .c-wrapper {
     flex-direction: column;
     padding: 0px 50px;
+  }
+  
+  .c-a{
+    text-decoration: none;
   }
 
   .c-title {

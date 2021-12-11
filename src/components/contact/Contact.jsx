@@ -5,6 +5,8 @@ import Address from "../../img/address.png";
 import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
+import github from '../../img/github.png' 
+import linkedinimg from '../../img/linkedinimg.svg' 
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,10 +18,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_rrvnzco",
-        "template_3v5nih4",
+        "service_9btn2tc",
+        "template_x4bwnej",
         formRef.current,
-        "user_DrriDPTGKO2Zj4RDXCA6W"
+        "user_f4aAZElQ0Uy5UZpJLaWtc"
       )
       .then(
         (result) => {
@@ -34,7 +36,7 @@ const Contact = () => {
 
   return (
     <div className="c">
-      {/* <div className="c-bg"></div> */}
+      <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
           <h1 className="c-title">Contact me</h1>
@@ -51,13 +53,23 @@ const Contact = () => {
               <img className="c-icon" src={Address} alt="" />
               Thodupuzha, Idukki Kerala 685590
             </div>
+            <div className="c-info-item">
+              <img className="c-icong" src={github} alt="" />
+              <a href="https://github.com/vishnusankar95" target="_blank" rel="noreferrer">
+              Github</a>
+            </div>
+            <div className="c-info-item">
+              <img className="c-icon" src={linkedinimg} alt="" />
+              <a className="c-a" href="https://www.linkedin.com/in/vishnu-sankar-855b72b4/" target="_blank" rel="noreferrer">
+              LinkedIn</a>
+            </div>
           </div>
         </div>
         <div className="c-right">
-          {/* <p className="c-desc">
-            <b>What’s your story?</b> Get in touch. Always available for
-            freelancing if the right project comes along. me.
-          </p> */}
+          <p className="c-desc">
+            Get in touch. Always available for
+            the right project comes along me.
+          </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
