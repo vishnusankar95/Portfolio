@@ -52,6 +52,7 @@
   width: 80px;
   height: 40px;
   margin-left: -1.9vw;
+  background-color: white;
 }
 
 .c-desc {
@@ -79,7 +80,8 @@ textarea {
   padding-left: 10px;
 }
 
-button {
+.c-btn {
+  margin-top: 10px;
   border: none;
   padding: 15px;
   background-color: #00E696;;
@@ -88,15 +90,35 @@ button {
   cursor: pointer;
 }
 
+.c-atags{
+  text-decoration: none;
+  letter-spacing: 0;
+}
+
+.c-atags:hover,
+.c-atags:active {
+letter-spacing: 5px;
+color: #00E696;
+font-weight: 500;
+}
+
+
+
 @media screen and (max-width: 480px) {
   .c-wrapper {
     flex-direction: column;
     padding: 0px 50px;
   }
   
-  .c-a{
+  .c-atags{
     text-decoration: none;
+    letter-spacing: 0;
   }
+
+  .c-atags:hover,
+.c-atags:active {
+  letter-spacing: 5px;
+}
 
   .c-title {
     font-size: 30px;
@@ -124,7 +146,5 @@ button {
     margin-left: 0;
   }
 
-  button {
-    margin-top: 10px;
-  }
+
 }

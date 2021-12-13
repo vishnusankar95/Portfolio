@@ -1,6 +1,6 @@
 import "./product.css";
 import github from '../../img/github.png'
-import liveview from '../../img/liveview.png'
+import liveview from '../../img/liveview.jpg'
 
 
 const Product = ({img,link,title,description,tstack,live}) => {
@@ -27,7 +27,8 @@ const Product = ({img,link,title,description,tstack,live}) => {
            <h4 className="p-stack">Tech Stack: {tstack}</h4>
 
            <div>
-             <a href={link} target="_blank" rel="noreferrer">  <img src={github} alt="" className="p-git_img" /></a>
+             <a href={link} target="_blank" rel="noreferrer">  <img src={github} alt="" className="p-git_img" />
+             </a>
              <a href={live} target="_blank" rel="noreferrer">  <img src={liveview} alt="" className="p-git_img" /></a>
              </div>
       </div>

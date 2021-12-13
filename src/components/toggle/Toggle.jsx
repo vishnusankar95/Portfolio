@@ -1,6 +1,6 @@
 import "./toggle.css";
 import Sun from "../../img/sun.png";
-import Moon from "../../img/moon.png";
+import Moon from "../../img/moon.jpg";
 import { useContext } from "react";
 import { ThemeContext } from "../../context";
 import {Link} from "react-router-dom";
@@ -13,6 +13,7 @@ const Toggle = () => {
   };
   return (
     <div>
+
         <div className="main">        
                <div className="cont">
                    <Link className = "button" to ="/">Home</Link>
@@ -20,17 +21,19 @@ const Toggle = () => {
                    <Link className = "button" to ="/skills">Skills</Link>
                    <Link className = "button" to ="/project">Project</Link>
                    <Link className = "button" to ="/contact">Contact</Link>
+                   <a className = "button" href="https://drive.google.com/file/d/1Aa7U2boTJXR9XdjcSyGZnZ0iwYeyhM0r/view?usp=sharing" >Resume</a>
                </div>
        </div> 
 
       <div className="t">
-        <img src={Sun} alt="" className="t-icon" />
-        <img src={Moon} alt="" className="t-icon" />
+
+      <img src={Sun} alt="" className="t-icon" />
+      <img src={Moon} alt="" className="t-icon" />
         <div
           className="t-button"
           onClick={handleClick}
           style={{ left: theme.state.darkMode ? 0 : 25 }}
-        ></div>
+        > </div>
       </div>
     </div>
   );

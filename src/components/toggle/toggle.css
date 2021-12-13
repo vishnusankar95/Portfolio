@@ -46,15 +46,16 @@
 }
 
 .t-icon{
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
 }
 
 .t-button{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: rgb(66, 66, 66);
+    background-color: #00e696;
     position: absolute;
     cursor: pointer;
 }

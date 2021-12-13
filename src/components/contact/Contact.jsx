@@ -7,6 +7,11 @@ import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
 import github from '../../img/github.png' 
 import linkedinimg from '../../img/linkedinimg.svg' 
+import resume from '../../img/resume.png' 
+import {toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
+toast.configure()
 
 const Contact = () => {
   const formRef = useRef();
@@ -27,9 +32,13 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setDone(true)
+          toast.success('Thank you')
+          toast.info('Message received')         
         },
         (error) => {
           console.log(error.text);
+          toast.warn('Message not send')  
+          toast.error('Something went wrong')  
         }
       );
   };
@@ -54,14 +63,20 @@ const Contact = () => {
               Thodupuzha, Idukki Kerala 685590
             </div>
             <div className="c-info-item">
-              <img className="c-icong" src={github} alt="" />
-              <a href="https://github.com/vishnusankar95" target="_blank" rel="noreferrer">
+              <img className="c-icon" src={github} alt="" />
+              <a className="c-atags" href="https://github.com/vishnusankar95" target="_blank" rel="noreferrer">
               Github</a>
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={linkedinimg} alt="" />
-              <a className="c-a" href="https://www.linkedin.com/in/vishnu-sankar-855b72b4/" target="_blank" rel="noreferrer">
+              <a className="c-atags" href="https://www.linkedin.com/in/vishnu-sankar-855b72b4/" target="_blank" rel="noreferrer">
               LinkedIn</a>
+            </div>
+
+            <div className="c-info-item">
+              <img className="c-icon" src={resume} alt=""  />
+              <a className = "c-atags" href="https://drive.google.com/file/d/1Aa7U2boTJXR9XdjcSyGZnZ0iwYeyhM0r/view?usp=sharing" >
+              Resume</a>
             </div>
           </div>
         </div>
@@ -71,12 +86,11 @@ const Contact = () => {
             the right project comes along me.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
+            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" required="true" name="user_name" />
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
+            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" required="true" name="user_email" />
             <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" />
-            <button>Submit</button>
-            {done && "Thank you..."}
+            <button className="c-btn">Submit</button>
           </form>
         </div>
       </div>

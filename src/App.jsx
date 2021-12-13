@@ -8,6 +8,7 @@ import Toggle from "./components/toggle/Toggle";
 import { ThemeContext } from "./context";
 import {Switch} from 'react-router'
 import {Route} from "react-router-dom"
+import './App.css';
 
 const App = () => {
   const theme = useContext(ThemeContext);

@@ -6,7 +6,7 @@ import javascripts from '../../img/javascripts.png'
 import react from '../../img/react.png'
 import github from '../../img/github.png'
 import node from '../../img/node.png'
-import express from '../../img/express.png'
+import express from '../../img/express.jpg'
 import mongoose from '../../img/mongoose.png'
 
 function Skills() {
