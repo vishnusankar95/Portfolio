@@ -15,7 +15,7 @@ toast.configure()
 
 const Contact = () => {
   const formRef = useRef();
-  const [done, setDone] = useState(false)
+ const [done, setDone] = useState(false)
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
@@ -91,6 +91,7 @@ const Contact = () => {
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" required="true" name="user_email" />
             <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" />
             <button className="c-btn">Submit</button>
+             {done && ""}
           </form>
         </div>
       </div>
