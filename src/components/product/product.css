@@ -32,6 +32,10 @@
   transform: rotate(1080deg);
 }
 
+a{
+    text-decoration: none;
+}
+
 .p-img {
   width: 100%;
   transition: all 5s ease;
